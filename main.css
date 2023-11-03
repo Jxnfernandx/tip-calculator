@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+img,
+svg {
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+}
+body {
+    background-color: var(--light-grayish-cyan);
+    display: flex;
+    flex-direction: column;
+}
+
+#main-container {
+    background-color: var(--white);
+}
+
+.people-amount,
+.bill-amount {
+    background-color: var(--very-light-cyan);
+}
+
+.tip-selector {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.tip-selector > button {
+    background-color: var(--very-dark-cyan);
+    color: white;
+}
+
+.percentage-container {
+    background-color: var(--very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-selector button:hover {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+
+@media only screen and (max-width: 600px){
+    
+}
