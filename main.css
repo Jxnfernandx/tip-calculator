@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
+    border-radius: .3em;
 }
 
 img,
@@ -27,24 +28,17 @@ svg {
 }
 body {
     background-color: var(--light-grayish-cyan);
-    display: flex;
-    flex-direction: column;
 }
 
 #main-container {
     background-color: var(--white);
 }
 
-.people-amount,
+.people-input,
 .bill-amount {
-    background-color: var(--very-light-cyan);
+    background-color: black;
 }
 
-.tip-selector {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-}
 
 .tip-selector > button {
     background-color: var(--very-dark-cyan);
@@ -53,8 +47,6 @@ body {
 
 .percentage-container {
     background-color: var(--very-dark-cyan);
-    display: flex;
-    flex-direction: column;
 }
 
 .tip-selector button:hover {
@@ -65,4 +57,15 @@ body {
 
 @media only screen and (max-width: 600px){
     
+    .tip-selector {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+    
+    .percentage-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
