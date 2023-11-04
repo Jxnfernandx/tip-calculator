@@ -1,13 +1,16 @@
-let selectedButton = null;
-
 const btnPressed = "hsl(172, 67%, 45%)";
 const btnNumber = "hsl(183, 100%, 15%)";
-const resetBtn = document.querySelector(".reset");
-const btns = document.querySelectorAll("button");
+const RESET_BTN = document.querySelector(".reset");
+const BTNS = document.querySelectorAll("button");
 
+let selectedButton = null;
+let billAmount = 0;
+let numOfPeople = 0;
+let tipPerPerson = 0.00;
+let totalPerPerson = 0.00;
 
-for (let i = 0; i < btns.length; i++) {
-    const button = btns[i];
+for (let i = 0; i < BTNS.length; i++) {
+    const button = BTNS[i];
 
     button.addEventListener("click", () => {
         if (selectedButton) {
@@ -22,7 +25,7 @@ for (let i = 0; i < btns.length; i++) {
     });
 }
 
-resetBtn.addEventListener("click", () => {
+RESET_BTN.addEventListener("click", () => {
     if (selectedButton) {
         selectedButton.style.backgroundColor = "";
         selectedButton.style.color = "";
