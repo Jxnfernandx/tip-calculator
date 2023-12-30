@@ -9,11 +9,14 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-
+  <div class="top-text">Splitter</div>
   <div id="main-container">
     <div class="input-container"> 
       <div class="bill-container">
-        Bill
+        <div class="text-description">
+          Bill
+        </div>
+        
         <div id="bill-amount">
           <input  class="amount-input"
                   type="text">
@@ -22,7 +25,10 @@
       </div>
 
       <div class="tip-container">
-        Select Tip %
+        <div class="text-description">
+          Select tip %
+        </div>
+        
         <div class="tip-selector">
           <button value=".05">5%</button>
           <button value=".10">10%</button>
@@ -31,14 +37,19 @@
           <button value=".5">50%</button>
           <button value="custom">Custom</button>
         </div>
+
       </div>
 
       <div class="people-container">
-        Number of People
+        <div class="text-description">
+          Number of People
+        </div>
+        
         <div id="people-input">
           <input  class="people-input"
                   type="text">
           </input>
+        
         </div>
       </div>
       
@@ -46,14 +57,26 @@
 
     <div class="percentage-container">
       <div class="tip-amount">
-        Tip Amount
-        / person
+        <div>
+          Tip Amount
+        </div>
+
+        <div>
+          / person
+        </div>
+
         <span id="tip"></span>
       </div>
 
       <div class="person-total">
-        Total
-        / person
+        <div>
+          Total
+        </div>
+        
+        <div>
+          / person
+        </div>
+
         <span id="total"></span>
       </div>
 
