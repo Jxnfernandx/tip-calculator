@@ -19,7 +19,10 @@
         
         <div id="bill-amount">
           <input  class="amount-input"
-                  type="text">
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  oninput="this.value = Math.abs(this.value)">
           </input>
         </div>
       </div>
@@ -35,7 +38,10 @@
           <button value=".15">15%</button>
           <button value=".25">25%</button>
           <button value=".5">50%</button>
-          <button value="custom">Custom</button>
+          <input  class="custom"
+                  type="number"
+                  oninput="this.value = Math.abs(this.value)"
+                  placeholder="Custom"></input>
         </div>
 
       </div>
@@ -47,7 +53,10 @@
         
         <div id="people-input">
           <input  class="people-input"
-                  type="text">
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  oninput="this.value = Math.abs(this.value)">
           </input>
         
         </div>
@@ -58,26 +67,30 @@
     <div class="percentage-container">
       <div class="tip-amount">
         <div>
-          Tip Amount
+          <div class="main-text">
+            Tip Amount
+          </div>
+  
+          <div class="slash">
+            / person
+          </div>
         </div>
 
-        <div>
-          / person
-        </div>
-
-        <span id="tip"></span>
+        <div id="tip">$</div>
       </div>
 
       <div class="person-total">
         <div>
-          Total
-        </div>
-        
-        <div>
-          / person
+          <div class="main-text">
+            Total
+          </div>
+          
+          <div class="slash">
+            / person
+          </div>
         </div>
 
-        <span id="total"></span>
+        <div id="total">$</div>
       </div>
 
       <button class="reset">Reset</button>
