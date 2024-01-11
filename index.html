@@ -20,10 +20,9 @@
         <div id="bill-amount">
           <input  class="amount-input"
                   type="number"
+                  step=".01"
                   min="0"
-                  placeholder="0"
-                  oninput="this.value = Math.abs(this.value)">
-          </input>
+                  placeholder="0"/>
         </div>
       </div>
 
@@ -41,7 +40,7 @@
           <input  class="custom"
                   type="number"
                   oninput="this.value = Math.abs(this.value)"
-                  placeholder="Custom"></input>
+                  placeholder="Custom" />
         </div>
 
       </div>
@@ -49,9 +48,12 @@
       <div class="people-container">
         <div class="text-description">
           Number of People
+          <div class="warning">
+            Can't be zero
+          </div>
         </div>
         
-        <div id="people-input">
+        <div id="people">
           <input  class="people-input"
                   type="number"
                   placeholder="0"
