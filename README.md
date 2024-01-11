@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Jxnfernandx/tip-calculator)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://jxnfernandx.github.io/tip-calculator/)
 
 ## My process
 
@@ -61,7 +61,6 @@ As I get better with JavaScript, I want to know what are the best methods and pr
 - [Stack Overflow](https://www.stackoverflow.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
